@@ -1,0 +1,117 @@
+.wrapper-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+@keyframes border-color-red {
+    to {border: 1px solid yellow;}
+}
+@keyframes border-color-gray {
+    to {border: 1px solid gray;}
+}
+
+.card-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin: 1px;
+    width: 146px;
+    height: 92px;
+}
+#first {
+    animation-name: first;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#second {
+    animation-name: second;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#third {
+    animation-name: third;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#fourth {
+    animation-name: fourth;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first {
+    0%   {border-color: red;}
+    24.999999%  {border-color: red;}
+    25%  {border-color: gray;}
+    50%  {border-color: gray;}
+    75%  {border-color: gray;}
+    100% {border-color: gray;}
+}
+@keyframes second {
+    0%   {border-color: gray;}
+    24.999999%  {border-color: gray;}
+    25%  {border-color: red;}
+    49.999999%  {border-color: red;}
+    50%  {border-color: gray;}
+    75%  {border-color: gray;}
+    100% {border-color: gray;}
+}
+@keyframes third {
+    0%   {border-color: gray;}
+    25%  {border-color: gray;}
+    49.999999%  {border-color: gray;}
+    50%  {border-color: red;}
+    74.999999%  {border-color: red;}
+    75%  {border-color: gray;}
+    100% {border-color: gray;}
+}
+@keyframes fourth {
+    0%   {border-color: gray;}
+    25%  {border-color: gray;}
+    50%  {border-color: gray;}
+    74.999999%  {border-color: gray;}
+    75%  {border-color: red;}
+    100% {border-color: red;}
+}
+.card-item-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 1px;
+    width: 296px;
+    height: 56px;
+    color: dimgray;
+}
+.product-photo {
+    display: flex;
+    width: auto;
+    height: 70px;
+    margin-bottom: 2px;
+}
+.logo {
+    display: flex;
+    width: 240px;
+    height: auto;
+}
+.fetched-price {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: black;
+}
